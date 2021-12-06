@@ -28,6 +28,7 @@ predicted_resale_df = pd.read_csv(os.path.join("data","predicted_resale_price.cs
 #dashtable formatting
 money = dash.dash_table.FormatTemplate.money(2)
 
+
 data = go.Scattermapbox(
     lat=lat,
     lon=lon,

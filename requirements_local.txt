@@ -1,0 +1,12 @@
+plotly
+chart_studio
+matplotlib
+dash
+numpy
+pandas
+scikit-learn
+lightgbm
+notebook
+dash-bootstrap-components
+optuna
+gunicorn

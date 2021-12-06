@@ -8,7 +8,7 @@ import os
 import pandas as pd
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-MAPBOX_KEY = "pk.eyJ1Ijoid29sZnJhZ2U4OSIsImEiOiJja3Z4anRldTkwa3lwMm5wNGcwM2J0NnN4In0.jVBdev5Nty-sfsdpHyRZ6w"
+MAPBOX_KEY = "YOURKEY"
 server = app.server
 
 # plotting data

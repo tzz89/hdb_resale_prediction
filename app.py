@@ -32,17 +32,17 @@ data = go.Scattermapbox(
     lon=lon,
     mode='markers',
     marker=dict(
-        size=14,
+        size=16,
         color='red',
-        opacity=0.5
+        opacity=0.4
     ),
     text=hover_text,
     hoverinfo='text',
     unselected = {
-        "marker":{"opacity":0.4, "size":12}
+        "marker":{"opacity":0.4, "size":16}
     },
     selected = {
-        "marker":{"opacity":0.4, "size":14, "color":"blue"}
+        "marker":{"opacity":0.4, "size":16, "color":"blue"}
     }
     )
 
@@ -55,8 +55,8 @@ layout = go.Layout(
         zoom=15.8,
         center=dict(lat=1.336, lon=103.699),
         style="mapbox://styles/wolfrage89/ckwddcs3t1wc414mocxijeo6a"),
-    width=1200,
-    height=600,
+    width=1400,
+    height=800,
     clickmode='event+select'
 )
 
@@ -68,7 +68,15 @@ app.layout = dbc.Container([
             dbc.Col([
                 html.H1("HDB resale price prediction",
                         className="text-center"),
-                dcc.Graph(id='map_3d', figure=main_figure)
+                dcc.Graph(id='map_3d', figure=main_figure),
+                html.H3("INSTRUCTIONS"),
+                html.Hr(),
+                html.Ul([
+                    html.Li("left-click to drag"),
+                    html.Li("right-click to rotate"),
+                    html.Li("Click on red dot to get prediction and resale history")
+                ]),
+                html.Hr()
             ])
         ]
     ),

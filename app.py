@@ -3,8 +3,7 @@ import plotly.graph_objs as go
 import dash
 import dash_bootstrap_components as dbc
 from dash import dcc, html, dash_table
-from dash.dependencies import Input, Output, State
-import chart_studio.plotly as py
+from dash.dependencies import Input, Output
 import os
 import pandas as pd
 
@@ -27,7 +26,6 @@ predicted_resale_df = pd.read_csv(os.path.join("data","predicted_resale_price.cs
 
 #dashtable formatting
 money = dash.dash_table.FormatTemplate.money(2)
-
 
 data = go.Scattermapbox(
     lat=lat,

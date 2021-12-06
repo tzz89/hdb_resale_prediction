@@ -11,7 +11,7 @@ In this project, we will be predicting hdb resale price in 2022 using datasets p
 
 ## DEMO
 <p align="center">
-<img src="assets/hdb_resale_prediction_demo.PNG" height="2500px" width="800px">
+<img src="assets/hdb_resale_prediction_demo.PNG" height="1000px" width="800px">
 </p>
 
 ***Note the app will take some time to start as the app goes into sleep after some inactivity

@@ -3,15 +3,15 @@ In this project, we will be predicting hdb resale price in 2022 using datasets p
 
 
 ## Technogies used
-1. mapbox api
-2. heroku
+1. mapbox api 
+2. heroku 
 3. plotly dash
 4. lightgbm
 5. optuna
 
 ## DEMO
 <p align="center">
-<img src="assets/hdb_resale_prediction_demo.PNG" height="1000px" width="800px">
+<img src="assets/hdb_resale_prediction_demo.PNG" height="500px" width="700px">
 </p>
 
 ***Note the app will take some time to start as the app goes into sleep after some inactivity
